@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": "100001",
+      "username": "Sharan",
+      "email": "727722eucs027@skcet.ac.in",
+      "password": "1234567",
+      "phonenumber": "9345556893",
+      "dateOfJoining": "2024-08-02",
+      "timeOfJoining": "23:12:19",
+      "islogin": 1
+    },
+    {
+      "id": "100003",
+      "username": "sasi",
+      "email": "sharanbadhma1@gmail.com",
+      "password": "1234567",
+      "phonenumber": "1234560989",
+      "dateOfJoining": "2024-08-03",
+      "timeOfJoining": "23:52:39",
+      "islogin": 0
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+.apply-now-menu {
+    position: absolute;
+    background-color: rgb(254, 254, 253);
+    
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0 3px 6px rgba(113, 111, 111, 0.898);
+  }
+  
+  .apply-now-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .apply-now-menu li {
+    padding: 5px 0;
+  }
+
+  .apply-now-menu li  {
+    text-decoration: none;
+    color: #333;
+    
+    font-family:'Poppins'; /* Font family */
+    font-size: 12px; /* Font size */
+    color: #333; /* Text color */
+    font-weight: 600; /* Font weight */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease
+  }
+  
+  .apply-now-menu li:hover {
+    color: #007bff;
+  }
+  .triangle {
+    position: absolute;
+    top: -5px; /* Adjust the position of the triangle */
+    left: 80px; /* Adjust the horizontal position of the triangle */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff; /* Match this with the background color of the menu */
+    
+  }

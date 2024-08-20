@@ -1,0 +1,201 @@
+.loan-details-card {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80%;
+  max-width: 900px;
+  height: 70%;
+  max-height: 75%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-button11 {
+    border: none;
+    font-size: 20px;
+    font-family: 'Poppins';
+    background: none;
+    color: rgb(255, 70, 3);
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 0px;
+    align-items: center;
+    display: flex;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.433);
+}
+
+.span-title11 {
+    color: rgb(69, 28, 0);
+}
+.crop-loan-img{
+  width: 12%;
+  margin-left: 1%;
+}
+.card-section11{
+  border: none;
+  background: none;
+  width:90%;
+  font-family: 'Poppins';
+  font-size:1rem;
+  margin-left: 10vw;
+  font-weight: bold;
+  color: black;
+}
+.card-section11:hover{
+  background: none;
+}
+.card-buttons11{
+  display: flex;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.menu {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+.tick-icon{
+  color: rgb(255, 187, 0);
+  padding-right: 5px;
+  width: 20px;
+  top: 2px;
+  position: relative;
+}
+li{
+ line-height: 26px;
+}
+.sub-list{
+  padding-left: 20px;
+}
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-item.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.details {
+  width: 70%;
+  height: 90%;
+  padding-left: 20px;
+  overflow-y: auto;
+}
+.details li{
+  font-size: 1rem;
+}
+
+.apply-now-button11 {
+  display: block;
+  width: 30%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 20px;
+  
+}
+
+.apply-now-button11:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .loan-details-card {
+    top: 10%;
+    width: 90%;
+    height: auto;
+    max-height: none;
+    padding: 15px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .menu-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .details {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .apply-now-button11 {
+    width: 80%;
+    font-size: 14px;
+    padding: 12px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loan-details-card {
+    top: 5%;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .menu-item {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .apply-now-button11 {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+  }
+}

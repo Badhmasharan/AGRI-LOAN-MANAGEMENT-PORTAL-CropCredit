@@ -1,0 +1,205 @@
+/* Container for the whole page */
+.my-applications {
+  font-family: 'Poppins';
+  background: #38a44e;
+  background: radial-gradient(at center top, #136924e6, #022207);
+  color: #eee;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: +4;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+/* Heading for the page */
+.my-applications h2 {
+  color: #fff;
+  margin-bottom: 20px;
+ 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.433);
+}
+
+/* Container for the application cards */
+.application-library {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+ 
+  
+  margin-bottom: 40px;
+  flex-direction: row;
+}
+
+.my-application-container {
+  margin-left: 10%;
+  margin-right: 8%;
+  width: 80%;
+  display: flex;
+  min-height: 77vh;
+ 
+}
+.my-application-icon{
+  width: 70px;
+  margin-left: 40%;
+}
+
+/* Application card styles with glassmorphism effect */
+.application-card {
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.19); /* Shadow effect */
+  border-radius: 10px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Cross-browser support for blur */
+  overflow: hidden; /* Hide overflow */
+  padding: 20px;
+  height: 350px;
+  margin-bottom: 20px;
+  line-height: 1px;
+  width: 330px;
+  font-size: 1rem;
+  position: relative; /* For positioning the delete button */
+  display: flex;
+  flex-direction: column;
+  
+  gap: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.433);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.status-button-waiting-review{
+  background-color: #f4dede0b;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 30px;
+  cursor: default;
+  transition: background-color 0.3s;
+  align-items: center;
+  font-family: 'Poppins';
+}
+.status-button-approved{
+  background-color: #00ff04a1;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 42%;
+  margin-top: 30px;
+  cursor: default;
+  transition: background-color 0.3s;
+  align-items: center;
+  font-family: 'Poppins';
+}
+.status-button-rejected{
+  background-color: #ff000093;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 42%;
+  margin-top: 30px;
+  cursor: default;
+  transition: background-color 0.3s;
+  align-items: center;
+  font-family: 'Poppins';
+}
+.application-button-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+  
+}
+.waiting-search{
+  margin-bottom: -2px;
+}
+/* Hover effect for the application card */
+.application-card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), 0 8px 40px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+}
+
+/* Icon in the application card */
+.loan-icon {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Heading inside the card */
+.application-card h4 {
+  color: #004896;
+  margin-bottom: 10px;
+  text-shadow: none;
+}
+
+/* Details container in the card */
+.application-card .details-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Detail items */
+.application-card .details-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+}
+
+/* Paragraph styling inside the card */
+.application-card p {
+  margin: 5px 0;
+  color: #eee; /* Light text color */
+}
+
+/* Strong text within the card */
+.application-card strong {
+  color: #0000008d;
+}
+
+/* Delete button styling */
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  font-family: 'Poppins';
+  margin-top: 30px;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+/* Optional styling for empty state */
+p.no-applications {
+  color: #777;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .my-application-container {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .application-card {
+    width: 100%; /* 1 card per row */
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "admins": [
+      {
+        "id": "a81d",
+        "username": "Badhmasharan",
+        "email": "badhmasharan@gmail.com",
+        "password": "1234567",
+        "phonenumber": "9345556893",
+        "islogin": 1
+      }
+    ]
+  }

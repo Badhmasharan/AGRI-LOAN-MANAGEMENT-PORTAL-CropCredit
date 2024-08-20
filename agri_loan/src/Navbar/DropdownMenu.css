@@ -1,0 +1,120 @@
+.dropdown-menu {
+  position: absolute;
+  top: 75px;
+  right: 19.2vw;
+  width: 210px;
+  background: rgb(255, 255, 255); 
+  backdrop-filter: blur(15px);
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.279);
+  z-index: +5;
+  backdrop-filter: blur(15px);
+}
+
+
+  .show-dropdown .dropdown-menu {
+    opacity: 1;
+    visibility:visible;
+    backdrop-filter: blur(15px);
+  }
+  .dropdown-title{
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .dropdown-title p {
+    padding-top: 17px;
+    padding-left: 10px;
+    color: black;
+    font-family: cursive;
+    font-weight:bolder;
+    cursor: default;
+  }
+  .line {
+    border-top: 2px solid rgba(33, 33, 33, 0.067); 
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+  .drop-buttons{
+    border: none;
+    background:none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 30px;
+  }
+  .drop-buttons:hover{
+    color: #007bff;
+  }
+  .drop-option{
+    align-items: center;
+    display: grid;
+    text-align: center;
+  }
+  .dropdown-icon{
+    margin-bottom: -2px;
+    width: 15px;
+    position: relative;
+    top: 5px;
+  }
+ .logout-function{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+ }
+  
+  .logout-buttton {
+   
+    align-items: center;
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    /* background-color: rgba(154, 99, 21, 0.703); */
+    background: none;
+    font-weight: bolder;
+  }
+  .dropdown-logbutton {
+    margin-top: 8px;
+    font-size: 20px;
+
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    display: flex;
+    
+    
+  }
+  .dropdown-logout-p{
+    font-family:cursive;
+    padding-left: 5px;
+  }
+  .user button:hover{
+    transform: scale(1.1);
+  }
+  
+
+  @media only screen and (max-width: 908px) {
+    .dropdown-menu {
+      position: absolute;
+      top:70px;
+      right: 8vw;
+      width: 210px;
+      background-color: rgb(255, 255, 255);
+      backdrop-filter: blur(10px);
+      border: none;
+      border-radius: 10px;
+      padding: 8px;
+      box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.279);
+      z-index: 1000; 
+      
+    }
+  }
+  

@@ -1,0 +1,30 @@
+.adminportal {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  background-color: #e4e4e4;
+}
+
+.adminportal-content {
+  flex: 1;
+  min-height: 100vh;
+
+  transition: margin-left 0.3s ease, width 0.3s ease;
+  margin-left: 14vw; /* Default margin when sidebar is open */
+}
+
+.adminportal-content .dashboard-container {
+  background-color: #e4e4e4;
+}
+
+/* Adjustments for closed sidebar */
+.sidebar-closed ~ .adminportal-content {
+  margin-left: 3.8vw; /* Adjust margin when sidebar is closed */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .adminportal-content {
+    margin-left: 3.8vw; /* Sidebar closed margin for small screens */
+  }
+}

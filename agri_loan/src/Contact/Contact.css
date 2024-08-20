@@ -1,0 +1,140 @@
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width:80%;
+  margin-left: 10%;
+ 
+  margin-right: 10%;
+  overflow: hidden;
+ 
+}
+ 
+.canvas{
+
+
+}
+
+.contact-form-section {
+ 
+  background-color: #ffffff; 
+  padding: 2%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  width: 35%;
+  margin-left: 10%;
+  margin-right: 5%;
+ transition: transforms 3s smooth;
+}
+.contact-form-section:hover{
+  transform: scale(1.02);
+}
+.contact-subtext {
+  color: #f39c12; 
+  font-size: 1.2rem;
+  margin-top: 5px;
+  font-family: 'Poppins';
+}
+
+.contact-heading {
+  color: #000000;
+  font-size: 2rem;
+  margin-top: -20px;
+  font-family: 'Poppins';
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: 'Poppins';
+}
+
+.contact-form-label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form-label-text {
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-family: 'Poppins';
+  width: 90%;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  font-family: 'Poppins';
+  background-color: #b3d0fa68; 
+  color: #6968688e;
+  border: 1px solid #c6c6c6; 
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  width: 95%;
+}
+
+.contact-form-textarea {
+  resize: vertical;
+}
+
+.contact-form-button {
+  background-color: #f36112; 
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins';
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-button:hover {
+  background-color: #e65d22; 
+}
+
+
+.contact-info-section {
+  flex: 1;
+  background-color: #f9f9f9; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.contact-info-text {
+  color: #333333;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.contact-socials {
+  margin-top: 20px;
+
+}
+
+
+.contact-model-loader {
+  flex: 1;
+  width: 35%;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 1000px) {
+  
+ .canvas{
+  display: none;
+ }
+ .contact-form-section{
+  width: 100%;
+ }
+}

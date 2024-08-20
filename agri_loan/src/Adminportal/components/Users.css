@@ -1,0 +1,171 @@
+
+.user-container {
+  margin-left: 14vw;
+  padding: 20px;
+  transition: margin-left 0.3s;
+  font-family: 'Poppins';
+}
+
+.sidebar-closed + .container {
+  margin-left: 3.8vw; 
+}
+
+.users-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.user-summary-card {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-summary-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+
+.user-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.user-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px); 
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.user-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-card img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.user-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+
+.user-card p {
+  margin: 10px 0;
+  color: #777;
+}
+
+.user-card p strong {
+  color: #333;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.button-container .button-edit {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Poppins';
+}
+
+.button-container .button-edit:hover {
+  background-color: #3165aa;
+}
+
+.button-delete-user {
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Poppins';
+}
+
+.button-delete-user:hover {
+  background-color: #c9302c;
+}
+
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.status-approved {
+  background-color: #5cb85c;
+}
+
+.status-pending {
+  background-color: #f0ad4e;
+}
+
+.status-rejected {
+  background-color: #d9534f;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .user-card {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .user-summary-card {
+    margin-left: 3.8vw;
+  }
+
+  .sidebar-closed + .container .user-summary-card {
+    margin-left: 3.8vw; 
+  }
+}

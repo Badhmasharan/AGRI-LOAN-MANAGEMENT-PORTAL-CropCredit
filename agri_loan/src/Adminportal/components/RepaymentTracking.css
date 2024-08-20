@@ -1,0 +1,111 @@
+
+.main-container-admin{
+    overflow: hidden;
+   
+}
+.repayment-tracking-container {
+    padding: 20px;
+    margin-left: 14vw; 
+    transition: margin-left 0.3s ease;
+    background-color: #f5f5f5; 
+    font-family: 'Poppins';
+    min-height: 85vh;
+    /* background-image: url('C:\Users\shara\Videos\APP DEVELOPMENT 2024\DAY 1\frontend\public\loanApp.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+  
+  
+  .sidebar-closed ~ .repayment-tracking-container {
+    margin-left: 3.8vw;
+  }
+  
+  .repayment-tracking-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+
+  .repayment-tracking-table-container {
+    margin-bottom: 20px;
+    
+  }
+  
+ 
+  .repayment-tracking-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repayment-tracking-table th,
+  .repayment-tracking-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .repayment-tracking-table th {
+    background-color: #2c28a8; 
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .repayment-tracking-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .repayment-tracking-table tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  .view-schedule-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ff6200; 
+    color: #ffffff;
+  }
+  
+  .view-schedule-button:hover {
+    background-color: #e55b00; 
+  }
+  
+
+  @media (max-width: 1200px) {
+    .repayment-tracking-container {
+      margin-left: 10vw;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .repayment-tracking-container {
+      margin-left: 8vw; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .repayment-tracking-container {
+      margin-left: 3.8vw; 
+      overflow-x: scroll;
+    }
+  
+    .repayment-tracking-table {
+      overflow-x: auto; 
+    }
+  
+    .repayment-tracking-table th,
+    .repayment-tracking-table td {
+      padding: 8px;
+    }
+  }
+  

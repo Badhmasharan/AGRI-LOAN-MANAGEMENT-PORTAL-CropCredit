@@ -1,0 +1,429 @@
+{
+  "applications": [
+    {
+      "id": "1af7",
+      "loanAmount": "3456789",
+      "annualIncome": "345679",
+      "loanType": "Crop Loan",
+      "firstName": "BADHMASHARAN",
+      "lastName": "S",
+      "birthDate": "6789-04-23",
+      "email": "badhmasharan@gmail.com",
+      "phone": "9345556893",
+      "addressLine1": "1-A SN APARTMENT,SIDHAPUDUR,COIMBATORE",
+      "addressLine2": "",
+      "city": "COIMBATORE",
+      "state": "Tamil Nadu",
+      "postalCode": "641044",
+      "addressDuration": "4 YEARS",
+      "employer": "",
+      "occupation": "FARMER",
+      "yearsExperience": "",
+      "monthlyIncome": "45678",
+      "monthlyRentMortgage": "",
+      "downPayment": "",
+      "comments": "",
+      "bankName": "STATE BANK OF INDIA",
+      "accountNumber": "234567890098",
+      "bankPhone": "9345556893",
+      "authorizeConsent": true,
+      "agreeStatement": true,
+      "photoUpload": {},
+      "aadharUpload": {},
+      "landCertificateUpload": {},
+      "submittedAt": "2024-08-02T12:17:00.794Z",
+      "status": "Approved",
+      "userId": "100001",
+      "repaymentSchedule": [
+        {
+          "date": "2024-08-31",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2024-09-30",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2024-10-31",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2024-11-30",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2024-12-31",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2025-01-31",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2025-02-28",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2025-03-31",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2025-04-30",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2025-05-31",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2025-06-30",
+          "amount": "293250.93"
+        },
+        {
+          "date": "2025-07-31",
+          "amount": "293250.93"
+        }
+      ]
+    },
+    {
+      "id": "46e6",
+      "loanAmount": "2345678",
+      "annualIncome": "123456",
+      "loanType": "Farm Mechanisation Loan",
+      "firstName": "BADHMASHARAN",
+      "lastName": "S",
+      "birthDate": "2004-07-29",
+      "email": "badhmasharan@gmail.com",
+      "phone": "9345556893",
+      "addressLine1": "1-A SN APARTMENT,SIDHAPUDUR,COIMBATORE",
+      "addressLine2": "",
+      "city": "COIMBATORE",
+      "state": "Tamil Nadu",
+      "postalCode": "641044",
+      "addressDuration": "3yrs",
+      "employer": "",
+      "occupation": "FARMER",
+      "yearsExperience": "",
+      "monthlyIncome": "123456",
+      "monthlyRentMortgage": "",
+      "downPayment": "",
+      "comments": "",
+      "bankName": "STATE BANK OF INDIA",
+      "accountNumber": "234567890098",
+      "bankPhone": "9345556893",
+      "authorizeConsent": true,
+      "agreeStatement": true,
+      "photoUpload": {},
+      "aadharUpload": {},
+      "landCertificateUpload": {},
+      "submittedAt": "2024-08-02T12:17:00.794Z",
+      "status": "Approved",
+      "userId": "100003",
+      "repaymentSchedule": [
+        {
+          "date": "2024-08-31",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2024-09-30",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2024-10-31",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2024-11-30",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2024-12-31",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2025-01-31",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2025-02-28",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2025-03-31",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2025-04-30",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2025-05-31",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2025-06-30",
+          "amount": "201923.78"
+        },
+        {
+          "date": "2025-07-31",
+          "amount": "201923.78"
+        }
+      ]
+    },
+    {
+      "id": "1a95",
+      "loanAmount": "23456",
+      "annualIncome": "123456",
+      "loanType": "Agri Credit Card",
+      "firstName": "BADHMASHARAN",
+      "lastName": "S",
+      "birthDate": "2341-06-29",
+      "email": "badhmasharan@gmail.com",
+      "phone": "9345556893",
+      "addressLine1": "1-A SN APARTMENT,SIDHAPUDUR,COIMBATORE",
+      "addressLine2": "",
+      "city": "COIMBATORE",
+      "state": "Tamil Nadu",
+      "postalCode": "641044",
+      "addressDuration": "3 years",
+      "employer": "",
+      "occupation": "FARMER",
+      "yearsExperience": "",
+      "monthlyIncome": "23456",
+      "monthlyRentMortgage": "",
+      "downPayment": "",
+      "comments": "",
+      "bankName": "STATE BANK OF INDIA",
+      "accountNumber": "234567890098",
+      "bankPhone": "9345556893",
+      "authorizeConsent": true,
+      "agreeStatement": true,
+      "photoUpload": {},
+      "aadharUpload": {},
+      "landCertificateUpload": {},
+      "submittedAt": "2024-08-02T12:17:00.794Z",
+      "status": "Approved",
+      "userId": "100003",
+      "repaymentSchedule": [
+        {
+          "date": "2024-08-31",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2024-09-30",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2024-10-31",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2024-11-30",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2024-12-31",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2025-01-31",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2025-02-28",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2025-03-31",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2025-04-30",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2025-05-31",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2025-06-30",
+          "amount": "2091.49"
+        },
+        {
+          "date": "2025-07-31",
+          "amount": "2091.49"
+        }
+      ]
+    },
+    {
+      "id": "3eb3",
+      "loanAmount": "346",
+      "annualIncome": "457",
+      "loanType": "Digital Gold Loan",
+      "firstName": "BADHMASHARAN",
+      "lastName": "S",
+      "birthDate": "5678-04-23",
+      "email": "727722eucs027@skcet.ac.in",
+      "phone": "9345556893",
+      "addressLine1": "1-A SN APARTMENT,SIDHAPUDUR,COIMBATORE",
+      "addressLine2": "",
+      "city": "COIMBATORE",
+      "state": "Tamil Nadu",
+      "postalCode": "641044",
+      "addressDuration": "5r",
+      "occupation": "FARMER",
+      "monthlyIncome": "2345",
+      "bankName": "STATE BANK OF INDIA",
+      "accountNumber": "234567890098",
+      "bankPhone": "9345556893",
+      "authorizeConsent": true,
+      "agreeStatement": true,
+      "photoUpload": {},
+      "aadharUpload": {},
+      "landCertificateUpload": {},
+      "submittedAt": "2024-08-02T12:17:00.794Z",
+      "status": "Approved",
+      "userId": "100001",
+      "repaymentSchedule": [
+        {
+          "date": "2024-08-31",
+          "amount": "29.19"
+        },
+        {
+          "date": "2024-09-30",
+          "amount": "29.19"
+        },
+        {
+          "date": "2024-10-31",
+          "amount": "29.19"
+        },
+        {
+          "date": "2024-11-30",
+          "amount": "29.19"
+        },
+        {
+          "date": "2024-12-31",
+          "amount": "29.19"
+        },
+        {
+          "date": "2025-01-31",
+          "amount": "29.19"
+        },
+        {
+          "date": "2025-02-28",
+          "amount": "29.19"
+        },
+        {
+          "date": "2025-03-31",
+          "amount": "29.19"
+        },
+        {
+          "date": "2025-04-30",
+          "amount": "29.19"
+        },
+        {
+          "date": "2025-05-31",
+          "amount": "29.19"
+        },
+        {
+          "date": "2025-06-30",
+          "amount": "29.19"
+        },
+        {
+          "date": "2025-07-31",
+          "amount": "29.19"
+        }
+      ]
+    },
+    {
+      "id": "9bbb",
+      "loanAmount": "456",
+      "annualIncome": "7890",
+      "loanType": "Digital Gold Loan",
+      "firstName": "BADHMASHARAN",
+      "lastName": "S",
+      "birthDate": "0789-06-05",
+      "email": "badhmasharan@gmail.com",
+      "phone": "9345556893",
+      "addressLine1": "1-A SN APARTMENT,SIDHAPUDUR,COIMBATORE",
+      "addressLine2": "",
+      "city": "COIMBATORE",
+      "state": "Tamil Nadu",
+      "postalCode": "641044",
+      "addressDuration": "6yrs",
+      "occupation": "FARMER",
+      "monthlyIncome": "5678",
+      "bankName": "STATE BANK OF INDIA",
+      "accountNumber": "2345678909876",
+      "bankPhone": "9345556893",
+      "authorizeConsent": true,
+      "agreeStatement": true,
+      "photoUpload": {},
+      "aadharUpload": {},
+      "landCertificateUpload": {},
+      "submittedAt": "2024-08-03T11:06:17.965Z",
+      "status": "Rejected",
+      "userId": "100003"
+    },
+    {
+      "id": "ce9b",
+      "loanAmount": "56789",
+      "annualIncome": "67890",
+      "loanType": "Agri Credit Card",
+      "firstName": "BADHMASHARAN",
+      "lastName": "S",
+      "birthDate": "5678-05-04",
+      "email": "badhmasharan@gmail.com",
+      "phone": "9345556893",
+      "addressLine1": "1-A SN APARTMENT,SIDHAPUDUR,COIMBATORE",
+      "addressLine2": "",
+      "city": "COIMBATORE",
+      "state": "Tamil Nadu",
+      "postalCode": "641044",
+      "addressDuration": "7yrs",
+      "occupation": "FARMER",
+      "monthlyIncome": "456789",
+      "bankName": "STATE BANK OF INDIA",
+      "accountNumber": "2345678909876",
+      "bankPhone": "9345556893",
+      "authorizeConsent": true,
+      "agreeStatement": true,
+      "photoUpload": {},
+      "aadharUpload": {},
+      "landCertificateUpload": {},
+      "submittedAt": "2024-08-03T11:34:32.861Z",
+      "status": "Rejected",
+      "userId": "100001"
+    },
+    {
+      "id": "4837",
+      "loanAmount": "45678",
+      "annualIncome": "67889",
+      "loanType": "Crop Loan",
+      "firstName": "Sharan",
+      "lastName": "S",
+      "birthDate": "6788-05-04",
+      "email": "727722eucs027@skcet.ac.in",
+      "phone": "9345556893",
+      "addressLine1": "1-A SN APARTMENT,SIDHAPUDUR,COIMBATORE",
+      "addressLine2": "",
+      "city": "COIMBATORE",
+      "state": "Tamil Nadu",
+      "postalCode": "641044",
+      "addressDuration": "5yrs",
+      "occupation": "FARMER",
+      "monthlyIncome": "45678",
+      "bankName": "STATE BANK OF INDIA",
+      "accountNumber": "2345678909876",
+      "bankPhone": "9345556893",
+      "authorizeConsent": true,
+      "agreeStatement": true,
+      "photoUpload": {},
+      "aadharUpload": {},
+      "landCertificateUpload": {},
+      "submittedAt": "2024-08-03T19:41:56.924Z",
+      "status": "Rejected",
+      "userId": "100003"
+    }
+  ]
+}

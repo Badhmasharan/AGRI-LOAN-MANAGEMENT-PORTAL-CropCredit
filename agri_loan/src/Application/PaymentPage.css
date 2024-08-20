@@ -1,0 +1,153 @@
+.payment-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-height: 100vh;
+}
+
+.lottie-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-left: 20px;
+ margin-right: 40px;
+}
+.lottie-container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-left: 20px;
+ margin-right: 40px;
+
+}
+
+.credit-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.credit-card-container:hover {
+  transform: translateY(-10px);
+}
+
+.credit-card {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #721717 0%, #1f1a01 100%);
+  border-radius: 15px;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-number {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.card-holder,
+.card-expiry {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.credit-card-form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.1rem;
+}
+.card-text-area{
+  background-color: white;
+}
+label {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+input {
+  padding: 0.4rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.credit-card-container button {
+  padding: 0.40rem;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.credit-card-container button:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .credit-card {
+    width: 100%;
+  }
+
+  .credit-card-form {
+    width: 100%;
+  }
+}
+
+.hold-name {
+  font-size: 1.2rem;
+}
+
+.pay-btn {
+  color: white;
+  height: 45px;
+  width: 100%;
+  background-color: #28a745;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+}

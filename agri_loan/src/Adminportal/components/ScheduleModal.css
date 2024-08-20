@@ -1,0 +1,85 @@
+/* ScheduleModal.css */
+
+.schedule-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    font-family: 'Poppins';
+  }
+  
+  .schedule-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins';
+  }
+  
+  .schedule-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+  }
+  
+  .schedule-modal-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Poppins';
+  }
+  
+  .close-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .close-btn:hover {
+    background: #c0392b;
+  }
+  
+  .schedule-modal-body {
+    margin-top: 20px;
+  }
+  
+  .schedule-modal table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Poppins';
+  }
+  
+  .schedule-modal th, .schedule-modal td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-family: 'Poppins';
+    text-align: left;
+  }
+  
+  .schedule-modal th {
+    background-color: #f4f4f4;
+    font-family: 'Poppins';
+  }
+  
+  .schedule-modal tr:nth-child(even) {
+    background-color: #f9f9f9;
+    font-family: 'Poppins';
+  }
+  
+  .schedule-modal tr:hover {
+    background-color: #f1f1f1;
+    font-family: 'Poppins';
+  }
+  

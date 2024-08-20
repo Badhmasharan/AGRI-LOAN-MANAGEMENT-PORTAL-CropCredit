@@ -1,0 +1,158 @@
+/* Container for the entire form */
+.app-form{
+  background: linear-gradient(to bottom, rgba(218, 162, 120, 0.573), #d89d6990, #dd955553, #eb905730);
+  background-repeat: no-repeat;
+  font-family: 'Poppins';
+ height: 100%;
+}
+.loan-application-form {
+    width: 550px;
+    backdrop-filter: blur(13px);
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  .income-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Styling for form steps */
+  .form-step {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .loan-application-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Fieldset styling */
+  .loan-application-form fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+    background: #fff;
+  }
+
+  .loan-application-form textarea{
+    background-color: white;
+  }
+  
+  .loan-application-form legend {
+    font-size: 18px;
+    color: white;
+    padding: 0 10px;
+    background: linear-gradient(to bottom, rgba(255, 111, 0, 0.573), #eb90577e);
+    border-radius: 6px;
+  }
+  
+  /* Form labels */
+  .loan-application-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .loan-application-form input[type="text"],
+  .loan-application-form input[type="number"],
+  .loan-application-form input[type="email"],
+  .loan-application-form input[type="tel"],
+  .loan-application-form input[type="date"],
+  .loan-application-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-size: 16px;
+  }
+  
+  /* Textarea specific styling */
+  .loan-application-form textarea {
+    resize: vertical;
+  }
+  
+  /* File upload fields */
+  .loan-application-form input[type="file"] {
+    margin-bottom: 15px;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin: -10px 0 10px;
+  }
+  
+  /* /* Buttons */
+  .loan-application-form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .loan-application-form input{
+     background-color: white;
+  }
+  
+  .loan-application-form button:hover {
+    background: #0056b3;
+  }
+  
+  /* Previous and Next buttons specific styling */
+  .loan-application-form button[type="button"] {
+    background: #0058a6;
+    
+  }
+  
+ .loan-application-form button[type="button"]:hover {
+    background: #ff7b00;
+  } 
+  .step-button-split{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Checkbox styling */
+  .loan-application-form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .loan-application-form {
+      padding: 15px;
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea {
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  

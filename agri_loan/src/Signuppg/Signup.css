@@ -1,0 +1,244 @@
+
+.loginnn1{
+    background-image: url("C:\Users\shara\Desktop\App_Development_IRC-main\agri_loan\public\hero.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 100%;
+    background-size: 33%;
+    background-position-y:top ;
+    display:grid;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.wrapper1 h1{
+    font-size: 36px;
+    text-align: center;
+    color: rgb(154, 154, 154);
+    
+}
+.setMessage{
+    color: red;
+}
+.wrapper-container{
+    width: 100%;
+    align-items: center;
+    z-index: +2;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.wrapper1{
+    margin-bottom: 13vh;
+    width: 100%;
+    max-width: 420px;
+    min-width: 27vw;
+    /* margin-left: 10%;
+    margin-right:10% ; */
+    background: transparent;
+    z-index: +1;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-blend-mode:color-burn;
+    backdrop-filter: blur(13px);
+    color: rgb(143, 143, 143);
+    border-radius: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+    box-shadow: 0 0 8px #03441e;
+    height: 560px;
+    display: flex ;
+    align-items: center;
+}
+
+
+.wrapper1 h2{
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+.wrapper1 .input-boxx{
+    border: 2px solid rgba(128, 128, 128, 0.385);
+    border-radius: 40px;
+    height:50px;
+    align-items: center;
+    margin-top: 10px;
+    width: 98.5%;
+    display: flex;
+    justify-content: left;
+    justify-self: left;
+}
+
+.input-boxx input{
+    width: 75%;
+    height: 13px;
+    background: transparent;
+    border: none;
+    outline: none;
+    
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+    padding-left: 10px   ;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.input-boxx input::placeholder{
+    color: rgba(0, 0, 0, 0.598);
+}
+.input-boxx:hover{
+    border:2px solid#143668e1;
+}
+.wrapper1 .input-boxx1{
+    border: 2px solid rgba(128, 128, 128, 0.385);
+    border-radius: 40px;
+    height:50px;
+    align-items: center;
+    margin-top: 10px;
+    width: 98.5%;
+    display: flex;
+    justify-content: left;
+    justify-self: left;
+}
+
+.input-boxx1 input{
+    width: 75%;
+    height: 13px;
+    background: transparent;
+    border: none;
+    outline: none;
+    
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+    padding-left: 10px   ;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.input-boxx1 input::placeholder{
+    color: rgba(0, 0, 0, 0.598);
+}
+.input-boxx1:hover{
+    border:2px solid#143668e1;
+}
+
+.wrapper1 .input-boxx2{
+    border: 2px solid rgba(128, 128, 128, 0.385);
+    border-radius: 40px;
+    height:50px;
+    align-items: center;
+    margin-top: 10px;
+    width: 98.5%;
+    display: flex;
+    justify-content: left;
+    justify-self: left;
+}
+
+.input-boxx2 input{
+    width: 75%;
+    height: 13px;
+    background: transparent;
+    border: none;
+    outline: none;
+    
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+    padding-left: 10px   ;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.input-boxx2 input::placeholder{
+    color: rgba(0, 0, 0, 0.598);
+}
+.input-boxx2:hover{
+    border:2px solid#143668e1;
+}
+
+.wrapper1 .input-boxx3{
+    border: 2px solid rgba(128, 128, 128, 0.385);
+    border-radius: 40px;
+    height:50px;
+    align-items: center;
+    margin-top: 10px;
+    width: 98.5%;
+    display: flex;
+    justify-content: left;
+    justify-self: left;
+}
+
+.input-boxx3 input{
+    width: 75%;
+    height: 13px;
+    background: transparent;
+    border: none;
+    outline: none;
+    
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+    padding-left: 10px   ;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+}
+.input-boxx3 input::placeholder{
+    color: rgba(0, 0, 0, 0.598);
+}
+.input-boxx3:hover{
+    border:2px solid#143668e1;
+}
+.input-boxx3 i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper1 .btnn{
+    width: 100%;
+    height: 45px;
+    background:#157368;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.wrapper1 .btnn:hover{
+    box-shadow: 0 0 10px rgba(170, 255, 237, 0.305)
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .lady{
+        display: none;
+    }
+    
+  }
+
+@media only screen and (min-width: 909px) {
+  
+    
+  }
+
+
+
+@media only screen and (max-width: 908px) {
+   
+    .login-nav{
+        display: grid;
+    }
+    .login-nav p{
+        margin-left: 15px;
+        font-family: 'Poppins';
+        font-weight: 600;
+    }
+    
+  }
+  

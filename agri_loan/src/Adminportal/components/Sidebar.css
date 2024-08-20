@@ -1,0 +1,109 @@
+
+.sidebar-container {
+  width: 14vw;
+  background-color: #3e37c9;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: +1;
+}
+
+.sidebar-closed {
+  width: 3.8vw;
+}
+
+.sidebar-toggle-btn {
+  background-color: rgba(255, 255, 255, 0.185);
+  border: none;
+  color: rgb(255, 81, 0);
+  width: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -20px;
+  top: 10px;
+  transition: margin-left 0.3s;
+}
+
+.sidebar-closed .sidebar-toggle-btn {
+  right: -20px;
+}
+
+
+.sidebar-nav {
+  flex-grow: 1;
+  padding-top: 10px;
+}
+
+
+.admin-brand-title {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Poppins';
+  transition: justify-content 0.3s;
+  cursor: pointer;
+}
+
+.brand-title-closed {
+  justify-content: right;
+}
+
+.brand-title-open {
+  justify-content: flex-start;
+}
+
+
+.admin-brand-title.icon-plant {
+
+  width: 40px;
+ 
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  margin-top: 5px;
+  border-radius: 0 30px 30px 0;
+  font-family: 'Poppins';
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.sidebar-link:hover {
+  background-color: #2c28a8;
+}
+
+.sidebar-nav .active {
+  background-color: #2c28a8;
+  border-radius: 0 30px 30px 0;
+}
+
+
+.sidebar-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+
+.sidebar-label {
+  display: inline;
+  transition: opacity 0.3s;
+}
+
+.sidebar-closed .sidebar-label {
+  display: none;
+}
+

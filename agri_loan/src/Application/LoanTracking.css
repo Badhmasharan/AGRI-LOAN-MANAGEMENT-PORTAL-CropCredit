@@ -1,0 +1,124 @@
+
+.loan-monitoring-page {
+    font-family: 'Poppins';
+    background: #38a44e;
+    background: radial-gradient(at center top, #136924e6, #022207);
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.loan-monitoring-container {
+    width: 90%;
+    min-height: 81.2vh;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.loan-list-wrapper {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.no-loans-message {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.loan-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+
+.loan-table th, .loan-table td {
+    border: 1px solid #dddddd10;
+    padding: 8px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.loan-table th {
+    background-color: #004896;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
+
+.pay-now-btn{
+    background-color: greenyellow;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    color: white;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+.view-schedule-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pay-now-btn:hover {
+    background-color: #218838;
+}
+
+.view-schedule-btn:hover {
+    background-color: #138496;
+}
+
+.repayment-schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.repayment-schedule-table th, .repayment-schedule-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.repayment-schedule-table th {
+    background-color: #004896;
+    color: #ffffff;
+}
+
+.repayment-schedule-table td {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .loan-monitoring-container {
+        width: 90%;
+    }
+
+    .loan-table th, .loan-table td {
+        padding: 6px;
+    }
+}

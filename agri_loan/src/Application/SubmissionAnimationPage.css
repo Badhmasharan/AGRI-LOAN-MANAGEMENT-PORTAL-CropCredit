@@ -1,0 +1,22 @@
+.submission-animation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.277); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4; /* Ensure it's on top */
+  }
+  
+  .submission-animation-overlay h1 {
+    font-size: 3rem;
+  }
+  
+  .submission-animation-overlay p {
+    font-size: 1.5rem;
+  }
+  

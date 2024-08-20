@@ -1,0 +1,953 @@
+/* Home.css */
+
+.app-container {
+  transition: filter 0.3s ease;
+}
+
+.app-container.blurred {
+  filter: blur(5px);
+}
+
+.home-background {
+  background: linear-gradient(to bottom, rgba(218, 162, 120, 0.573), #d89d6990, #dd955553, #eb905730);
+  height: 110vh;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.display-board {
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 60px;
+  position: relative;
+  width: 80vw;
+  height: 100%;
+}
+
+.caption {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: +2;
+}
+
+.caption h1 {
+  color: rgb(255, 82, 8);
+  font-family: 'Poppins';
+  font-size: 35px;
+  animation: appearAndGrow 2s ease-out;
+ 
+}
+
+.caption p {
+  font-family: 'Poppins';
+  font-size: 18px;
+  margin-top: -1vw;
+  color: rgb(6, 6, 6);
+  font-weight: bolder;
+  animation: appearAndGrow 2s ease-out;
+}
+
+.money-hand {
+  z-index: 0;
+  height: 55vh;
+  width: 35vw;
+  position: absolute;
+  top: -33vh;
+  right: -12vw;
+  animation: floatSideways 2s ease-in-out forwards, float 2s ease-in-out 2s infinite;
+  animation-fill-mode: forwards;
+}
+.slideshow-container {
+  position: relative;
+  width: 80vw;
+  height: 100%;
+  border-radius: 20px;
+  animation: slideUp 2s;
+  padding-bottom: 100px;
+}
+
+.slide1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slide1 img {
+  width: 100%;
+  object-fit: cover;
+  height: 490px;
+  border-radius: 15px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -72px;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  border: none;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  display: block;
+}
+
+.separation-line {
+  position: relative;
+  width: 100%;
+  height: 6px; /* Thickness of the line */
+  margin: 0;
+  background: linear-gradient(to right and left, rgba(251, 174, 126, 0.371) 10%, rgba(218, 162, 120, 0.457) 90%);
+}
+.separation-line1 {
+  position: relative;
+  width: 100%;
+  height: 6px; /* Thickness of the line */
+  margin: 0;
+  background: rgba(255, 68, 0, 0.409);
+}
+
+.separation-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(251, 174, 126, 0.371) 10%, rgba(218, 162, 120, 0.457) 90%, transparent);
+}
+
+
+
+/* second-section css */
+
+.second-section {
+
+   width: 100%;
+   text-align: center;
+  padding-bottom: 30px;
+  background-color: #ecececb0;
+}
+.second-section h1 {
+  font-family: 'Poppins';
+  font-size: 1.7rem;
+  font-weight: 300;
+  
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  opacity: 0; 
+
+}
+
+.second-section.h1-animate h1 {
+  animation: pop 1s forwards;
+}
+
+
+
+.bank-options {
+  display: grid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 0 28px #df843a39;
+  border-radius: 0 65px 0 0; 
+  overflow: hidden;
+  width: 80%; 
+  background-color: white;
+  margin-left: 10%;
+}
+
+
+.h1-animate h1 {
+  animation: fadeIn 1s forwards;
+}
+
+.h1-animate .bank-options {
+  animation: pop 1s forwards;
+}
+
+.bank-option.pop {
+  animation: pop 0.5s forwards; 
+}
+
+
+.h1-animate h1,
+.h1-animate .bank-options,
+.bank-option.pop {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+.bank-option {
+
+  opacity: 0; 
+  transform: scale(0.5);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  cursor: pointer;
+}
+
+.bank-option::before,
+.bank-option::after {
+  content: '';
+  position: absolute;
+  background-color: #d15b0d1f;
+}
+
+.bank-option::before {
+  width: 80%;
+  height: 1px;
+  bottom: 0;
+  left: 10%; 
+}
+
+.bank-option::after {
+  height: 80%; 
+  width: 1px;
+  right: 0;
+  top: 10%; 
+}
+
+.bank-option:nth-child(2n)::after {
+  display: none; 
+}
+
+.bank-option:nth-last-child(-n + 2)::before {
+  display: none; 
+}
+
+.bank-option img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.bank-option img:hover {
+  transform: scale(1.1);
+}
+
+.bank-option p {
+  font-family: 'Poppins';
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+  color: #333;
+}
+
+.bank-option p:hover {
+  color: rgb(255, 102, 0);
+}
+
+
+/* third-section css */
+.third-section {
+  padding: 50px;
+  background: url('C:\Users\shara\Desktop\App_Development_IRC-main\agri_loan\public\interestbg.png') no-repeat center center;
+  background-size: cover;
+  background-size: 100vw 300px;
+  background-position: top;
+  text-align: center;
+  color: white;
+  background-color: rgba(233, 216, 203, 0.699);
+}
+
+.third-section h1 {
+  font-size: 1.7rem;
+  color: white;
+  padding-bottom: 60px;
+  font-weight: 300;
+  font-family: 'Poppins';
+  
+}
+
+.rates-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 85%;
+  margin-left: 7.5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0 0 28px #df843a59;
+  border-radius: 0 65px 0 0;
+  cursor: default;
+}
+
+.rate-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 10px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s;
+  height: 290px;
+}
+.rate-option img:hover{
+  transform: scale(1.1);
+}
+
+.rate-option:last-child {
+  border-right: none;
+}
+
+.rate-option:hover {
+  transform: translateY(-10px);
+}
+
+.rate-option p{
+  font-family: 'Poppins';
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.rate-icon {
+  height: 80px;
+  margin-bottom: 45px;
+}
+
+.rate-value {
+  font-size: 2.3em;
+  color: #0073e6;
+  font-family: 'Poppins';
+ 
+}
+
+.rate-value span {
+  font-size: 1em;
+  color: #333;
+  font-weight: 500;
+}
+
+
+.h1-animate h1 {
+  animation: fadeIn 1s forwards;
+}
+
+.h1-animate .bank-options {
+  animation: pop 1s forwards;
+}
+
+.bank-option,
+.rate-option {
+  opacity: 0; 
+  transform: scale(0.5); 
+}
+
+.bank-option.pop,
+.rate-option.pop {
+  animation: pop 0.5s forwards; 
+}
+
+.rates-container {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.rates-container.slide {
+  animation: slideDown 1s forwards; 
+}
+
+.h1-animate h1,
+.h1-animate .bank-options,
+.h1-animate .rates-container,
+.bank-option.pop,
+.rate-option.pop {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+/* fourth-section*/
+.fourth-section {
+  padding-bottom: 50px;
+  padding-left:50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #ecececb0;
+ 
+}
+.fourth-contaainer{
+  width: 80%;
+  margin-left: 10%;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  font-family: 'Poppins';
+  cursor: default;
+  
+}
+.stat-item h2{
+  font-size: 1.8rem;
+}
+.plus-sign {
+  color: red; /* Change this to your desired color */
+  font-size: inherit;
+}
+.stat-item p{
+  font-size: 1.1rem;
+}
+
+.stat-item {
+  opacity: 1; /* Ensure visibility without animation */
+  transform: translateY(0); /* No movement */
+}
+
+.digital-loan-heading {
+  margin-bottom: 40px;
+  opacity: 1; /* Ensure visibility without animation */
+  transform: translateY(0); /* No movement */
+  font-family: 'Poppins';
+  cursor: default;
+}
+.digital-loan-heading:hover{
+  color: rgb(255, 102, 0);
+}
+.loan-features {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.feature1 {
+  opacity: 1; /* Ensure visibility without animation */
+  transform: translateY(0); /* No movement */
+}
+
+.feature1 img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 5px;
+}
+.feature1 img:hover{
+  transform: scale(1.1);
+}
+.feature1 p {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  cursor: default;
+}
+.feature1 p:hover{
+  color: rgb(255, 102, 0);
+}
+
+.seperationline1 {
+  position: relative;
+  width: 100%;
+  height: 1.5px; /* Thickness of the line */
+  margin: 0;
+  background: linear-gradient(to right and left, rgba(255, 81, 0, 0.302), #ff953957, #dd955532, #eb905719);
+}
+
+.seperationline1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(218, 162, 120, 0.295) 10%, rgba(218, 162, 120, 0.295) 90%, transparent);
+}
+
+/* fifth-section */
+.fifth-section {
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 100px;
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  background-image: url('C:\Users\shara\Desktop\App_Development_IRC-main\agri_loan\public\loanApp.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.h1-animate h1 {
+  animation: fadeIn 1s forwards;
+}
+
+.h1-animate .fifth-section {
+  animation: pop 1s forwards;
+}
+
+ 
+
+.fifth-section h1 {
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  padding-bottom: 40px;
+  font-weight: 300;
+  font-family: 'Poppins';
+  text-align: center;
+ 
+}
+
+.flowchart {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+}
+
+.flow-step {
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: default;
+ 
+  box-shadow: 1px 10px 8px #55555539;
+  padding: 20px;
+  width: 150px;
+  position: relative;
+  overflow:hidden;
+  opacity: 0;
+  transform: translateX(-50px); /* Start position */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  z-index: 0; /* Ensure it's below the step number */
+}
+.flow-step h2{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.433);
+}
+.flow-step p{
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-family: 'Poppins';
+  font-size: small;
+  text-shadow: 0px 2px 2px rgb(250, 67, 0);
+}
+.flow-step.animate {
+  opacity: 1.5;
+  transform: translateX(0); /* End position */
+  border-right: 2px solid rgba(154, 168, 249, 0.07);
+  border-top: 2px solid rgba(154, 168, 249, 0.101);
+}
+
+.flow-step:hover {
+  transform: scale(1.1);
+}
+
+.flow-step .ripple-background {
+  position: relative;
+  top: 0;
+  left: -17vw;
+  right: 0;
+  bottom: -17vw;
+  overflow: hidden;
+}
+
+.flow-step .circle {
+  position: fixed;
+  border-radius: 50%;
+  background: rgb(111, 207, 255);
+  animation: ripple 10s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.flow-step .small {
+  width: 50px;
+  height: 50px;
+  left: -3vh;
+  bottom: -3vh;
+  transform: translate(-50%, -50%);
+}
+
+.flow-step .medium {
+  width: 80px;
+  height: 80px;
+  left: -4vh;
+  bottom: -4vh;
+  transform: translate(-50%, -50%);
+}
+
+.flow-step .large {
+  width: 120px;
+  height: 120px;
+  left: -4vh;
+  bottom: -4vh;
+  transform: translate(-50%, -50%);
+}
+
+.flow-step .xlarge {
+  width: 160px;
+  height: 160px;
+  left: -4vh;
+  bottom: -4vh;
+  transform: translate(-50%, -50%);
+}
+
+.flow-step .xxlarge {
+  width: 200px;
+  height: 200px;
+  left: -4vh;
+  bottom: -4vh;
+  transform: translate(-50%, -50%);
+}
+
+.flow-step .shade1 {
+  opacity: 0.2;
+}
+
+.flow-step .shade2 {
+  opacity: 0.5;
+}
+
+.flow-step .shade3 {
+  opacity: 0.7;
+}
+
+.flow-step .shade4 {
+  opacity: 0.8;
+}
+
+.flow-step .shade5 {
+  opacity: 0.9;
+}
+
+.step-number {
+  position:relative;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+.step-content {
+  position: relative;
+  z-index: 1; /* Ensures the step content is below the step number */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.433);
+
+}
+
+.Contact-section-bg{
+
+background: #010101;
+background: linear-gradient(0deg, #e98a539e, #ffd3c7ac);
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.7);
+  }
+  10% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+/* Animations */
+
+
+@keyframes appearAndGrow {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatSideways {
+  0% {
+    transform: translateX(18vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(18px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .home-background {
+    overflow: hidden; 
+  }
+
+  .money-hand {
+    z-index: 1;
+  height: 40vh;
+  width: 55vw;
+  position: absolute;
+  top: 20vh; 
+  right: -4vw;
+  animation: floatSideways 2s ease-in-out forwards;
+  }
+
+  .caption {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    display: grid;
+    margin-top: 0vh;
+    position: relative;
+    z-index: 1;
+    align-items: last baseline;
+  }
+
+  .caption h1 {
+    color: rgb(255, 82, 8);
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    animation: appearAndGrow 2s ease-out;
+  }
+
+  .caption p {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    margin-top: -1vw;
+    color: rgb(6, 6, 6);
+    font-weight: bolder;
+    animation: appearAndGrow 2s ease-out;
+  }
+  .bank-options {
+  display: grid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  box-shadow: 0 0 28px #df843a59;
+  border-radius: 0 65px 0 0; 
+  overflow: hidden; 
+  }
+  .slide1 img {
+    width:100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 15px;
+    
+  }
+  .stats {
+    display: grid;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    font-family: 'Poppins';
+    cursor: default;
+    
+  }
+  .loan-features {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+   
+  }
+  .feature1 {
+    opacity: 1; /* Ensure visibility without animation */
+    transform: translateY(0); /* No movement */
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    padding-right: 50%;
+  }
+  
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 900px){
+  .home-background {
+    overflow: hidden; 
+  }
+
+  .money-hand {
+    /* z-index: 1;
+  height: 40vh;
+  width: 55vw;
+  position: absolute;
+  top: 20vh; 
+  right: -4vw;
+  animation: floatSideways 2s ease-in-out forwards; */
+  display: none;
+  }
+
+  .caption {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    display: grid;
+    margin-top: 0vh;
+    position: relative;
+    z-index: 1;
+    align-items: last baseline;
+  }
+
+  .caption h1 {
+    color: rgb(255, 82, 8);
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    animation: appearAndGrow 2s ease-out;
+  }
+
+  .caption p {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    margin-top: -1vw;
+    color: rgb(6, 6, 6);
+    font-weight: bolder;
+    animation: appearAndGrow 2s ease-out;
+  }
+  .rates-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rate-option {
+    width: 80%;
+    margin: 20px 0;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .rate-option:last-child {
+    border-bottom: none;
+  }
+
+}
+

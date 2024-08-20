@@ -1,0 +1,208 @@
+.loan-applications-container {
+  padding: 20px;
+  margin-left: 14vw; 
+  transition: margin-left 0.3s ease;
+  background-color: #f5f5f5; 
+  font-family: 'Poppins';
+}
+
+
+.sidebar-closed ~ .loan-applications-container {
+  margin-left: 3.8vw; 
+}
+
+
+.loan-applications-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+
+.card,
+.card-approved,
+.card-rejected {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+}
+
+.card-approved {
+  border: 2px solid #26ff00d2;
+}
+
+.card-rejected {
+  border: 2px solid #ff0000d2;
+}
+
+.card:hover,
+.card-approved:hover,
+.card-rejected:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3,
+.card-approved h3,
+.card-rejected h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.card p,
+.card-approved p,
+.card-rejected p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #007bff; 
+}
+
+.print-function {
+  margin-left: -40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.loan-applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loan-applications-table th,
+.loan-applications-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.loan-applications-table th {
+  background-color: #2c28a8; 
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.loan-applications-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.loan-applications-table tr:hover {
+  background-color: #e9ecef;
+}
+
+.approve-btn,
+.reject-btn,
+.view-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.approve-btn {
+  background-color: #28a745; 
+  color: #ffffff;
+}
+
+.reject-btn {
+  background-color: #dc3545; 
+  color: #ffffff;
+}
+
+.view-btn {
+  background-color: #ff6200; 
+  color: #ffffff;
+}
+
+.loan-applications-table th button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Poppins';
+  position: relative;
+}
+
+.loan-applications-table th button:focus {
+  outline: none;
+}
+
+.loan-applications-table th button::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+}
+
+.loan-applications-table th button.asc::after {
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+.loan-applications-table th button.desc::after {
+  border-top: 5px solid rgb(255, 255, 255);
+}
+
+
+@media (max-width: 1200px) {
+  .loan-applications-container {
+    margin-left: 10vw; 
+  }
+  
+  .print-function {
+    margin-left: 75vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .loan-applications-container {
+    margin-left: 8vw;
+  }
+  
+  .print-function {
+    margin-left: 65vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .loan-applications-container {
+    margin-left: 3.8vw; 
+    overflow-x: scroll;
+  }
+  .loan-applications-table{
+    overflow-x: scroll;
+  }
+  .cards-container {
+    flex-direction: column;
+  }
+  
+  .print-function {
+    margin-left:50%; 
+  }
+  
+  .loan-applications-table th,
+  .loan-applications-table td {
+    padding: 8px;
+  }
+}

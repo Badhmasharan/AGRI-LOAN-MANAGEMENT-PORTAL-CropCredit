@@ -1,0 +1,225 @@
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    z-index: +1;
+  }
+  
+
+  .modal {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: auto;
+    top: 0;
+    transform: translateY(0); 
+    border: 2px solid transparent; 
+    transition: border-color 0.3s ease; 
+  }
+  
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  
+
+  .modal.Approved {
+    border-color: rgb(0, 255, 30); 
+  }
+  
+  .modal.Rejected {
+    border-color: lightcoral; 
+  }
+  
+ 
+  .approve-btn {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 30%;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .reject-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 30%;
+    cursor: pointer;
+  }
+  
+  
+  .modal::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .Approved.modal::-webkit-scrollbar-thumb {
+    background-color: #00ff008f; 
+    border-radius: 60px; 
+    padding-right: 2px;
+  }
+  
+  
+  .Rejected.modal::-webkit-scrollbar-thumb {
+    background-color: #ff00008f; 
+    border-radius: 60px; 
+    padding-right: 2px;
+  }
+  
+  .modal::-webkit-scrollbar-thumb {
+    background-color: #004cff8f; 
+  }
+  
+  .modal::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+  
+  
+  .status-btn {
+    background-color: lightgray; 
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: default;
+  }
+  
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+  }
+  
+  .revert-btn {
+    background-color: lightgray; 
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .refresh-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .refresh-btn:focus {
+    outline: none;
+  }
+  
+  .refresh-btn.spin {
+    animation: spin 1s infinite linear;
+  }
+ .print-icon{
+    font-size: 30px;
+ }
+ .print-btn{
+    display: flex   ;
+    border: none;
+    background:none;
+    font-size: 15px;
+    margin-left: 50px;
+    border-radius: 20px;
+    align-items: center;
+   font-family: 'Poppins';
+   text-decoration: underline;
+   cursor: pointer;
+   
+
+ }
+ .print-btn:hover{
+    color: orangered;
+ }
+  @media print {
+    .modal-overlay {
+      display: none; 
+    }
+  
+    .modal {
+      border: none; 
+      box-shadow: none; 
+    }
+  
+    .modal-footer {
+      display: none; 
+    }
+  } 
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+

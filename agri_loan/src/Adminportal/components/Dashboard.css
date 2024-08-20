@@ -1,0 +1,205 @@
+.dashboard-container {
+  display: grid;
+ padding:20px;
+
+ height: 100%;
+ overflow: hidden;
+  font-family: 'Poppins';
+}
+.dashboard-wrap{
+  display: flex;
+  gap: 20px;
+ 
+}
+.dashboard-left {
+  background-color: #ffffff;
+  padding-left: 20px;
+  border-radius: 12px;
+  width: 60vw;
+  height: auto;
+  max-height: 650px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.report-creation {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.dashboard-left .illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dashboard-left img {
+  max-width: 425px;
+  height: auto;
+ 
+  overflow: hidden;
+}
+
+.primary-btn {
+  background-color: #3e37c9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-link {
+  display: block;
+  margin-top: 10px;
+  color: #3e37c9;
+  text-decoration: none;
+}
+
+.dashboard-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  max-width: 700px;
+  height: 90vh;
+  overflow:visible;
+  
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  
+
+  transition: all 0.3s ease;
+}
+.dashboard-card-p{
+  font-size: 22px;
+    font-weight: 700;
+    color: #007bff;
+    margin-top:-15px;
+   
+}
+.dashboard-card-rp{
+  font-size: 22px;
+    font-weight: 700;
+    color: #007bff;
+    margin-top:-15px;
+   
+}
+
+.dashboard-card-approved {
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 255, 0);
+ 
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card-rejected {
+  background-color: #ffffff;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card-approved:hover {
+  transform: translateY(-2px);
+  background-color: #1aff008e;
+  color: white;
+}
+
+.dashboard-card-rejected:hover {
+  transform: translateY(-2px);
+  background-color: #ff030381;
+  color: white;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  background-color: #3e37c9;
+  color: white;
+}
+
+.dashboard-chart {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.dashboard-chart h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .dashboard-container{
+    height: 100%;
+  }
+  .dashboard-wrap {
+      flex-direction: column;
+      gap: 15px;
+      padding-right: 20px;
+  }
+  
+  .dashboard-left {
+      width: 100%;
+      
+     
+  }
+
+  .dashboard-right {
+      width: 100%;
+     
+  }
+
+  .dashboard-card, .dashboard-card-approved, .dashboard-card-rejected {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .dashboard-left img {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-wrap {
+   padding-right: 10px;
+  }
+
+  .dashboard-left h1 {
+      font-size: 24px;
+  }
+
+  .dashboard-left p, .dashboard-left .report-creation {
+      font-size: 14px;
+  }
+
+  .primary-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .dashboard-card, .dashboard-card-approved, .dashboard-card-rejected {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
